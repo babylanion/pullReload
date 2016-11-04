@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+    <title>test</title>
+    <link rel="stylesheet" href="css/pullReload.css"/>
+    <script type="text/javascript" language="javascript" src="http://y0.ifengimg.com/base/jQuery/jquery-1.8.3.min.js"></script>
+    <script src="js/pullReload.js"></script>
+    <style type="text/css" media="screen">
+        body{margin: 0;}
+        ul{list-style: none;padding: 0;}
+        li{height: 30px;border-bottom: 1px solid #ddd;line-height: 30px;padding-left: 10px;}
+
+    </style>
+    <script>
+        $(function(){
+            slide({container:"#container",next: function (e) {
+                //松手之后执行逻辑,ajax请求数据，数据返回后隐藏加载中提示
+//                initData();
+                stopdata = false;
+                var that = this;
+                setTimeout(function () {
+                    that.back.call();
+                }, 500);
+            }});
+        })
+    </script>
+</head>
+<body>
+<div style="width:100%;height:200px;background: #ccc;position: relative;z-index: 1111;">
+    aaaaaaaaa
+</div>
+<div id="container" class="scroller" >
+    <div class="loading"><span class="loadingIcon"></span>正在加载数据 ...</div>
+    <ul>
+        <li><a href="#">列表数据1</a></li>
+        <li><a href="#">列表数据2</a></li>
+        <li><a href="#">列表数据3</a></li>
+        <li><a href="#">列表数据4</a></li>
+        <li><a href="#">列表数据5</a></li>
+        <li><a href="#">列表数据6</a></li>
+        <li><a href="#">列表数据7</a></li>
+        <li><a href="#">列表数据8</a></li>
+        <li><a href="#">列表数据9</a></li>
+        <li><a href="#">列表数据10</a></li>
+        <li><a href="#">列表数据11</a></li>
+        <li><a href="#">列表数据12</a></li>
+        <li><a href="#">列表数据13</a></li>
+        <li><a href="#">列表数据14</a></li>
+        <li><a href="#">列表数据15</a></li>
+        <li><a href="#">列表数据16</a></li>
+        <li><a href="#">列表数据17</a></li>
+        <li><a href="#">列表数据18</a></li>
+        <li><a href="#">列表数据19</a></li>
+        <li><a href="#">列表数据20</a></li>
+        <li><a href="#">列表数据21</a></li>
+        <li><a href="#">列表数据22</a></li>
+        <li><a href="#">列表数据23</a></li>
+        <li><a href="#">列表数据24</a></li>
+        <li><a href="#">列表数据25</a></li>
+        <li><a href="#">列表数据26</a></li>
+        <li><a href="#">列表数据27</a></li>
+        <li><a href="#">列表数据28</a></li>
+        <li><a href="#">列表数据29</a></li>
+        <li><a href="#">列表数据30</a></li>
+    </ul>
+</div>
+</body>
+</html>
